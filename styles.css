@@ -8,6 +8,11 @@ body{
     padding: 0;
     background-color: black;
     overflow: hidden;
+    background-image: url('./img/bg-body.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 a{
     text-decoration: none;
@@ -96,6 +101,7 @@ a{
 .cover-container{
     z-index: 3;
     transition: 1s;
+    max-width: 500px;
 }
 .cover-container .cover-head-container button{
     padding: 10px 25px;
@@ -107,6 +113,7 @@ a{
 main{
     max-width: 500px;
     margin: auto; 
+    padding-bottom: 92px;
 }
 .home-container{
     padding-top: 75px;
@@ -117,12 +124,38 @@ main{
     box-shadow: 4px 4px 4px 0px rgba(51, 51, 51, 0.25);
     padding: 25px;
 }
+.calendar-container .card{
+    padding: 30px 50px;
+    max-width: 470px;
+}
+.calendar-container .card .title{
+    letter-spacing: 1.4px;
+}
+.calendar-container .card .subtitle{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.calendar-container .card .subtitle p{
+    padding: 0 5px;
+}
+.calendar-container .card .content{
+    margin-bottom: 12px;
+}
+.calendar-container .card a{
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 48px;
+    padding: 10px 25px;
+    width: fit-content;
+}
 /* MAIN */
 
 /* FOOTER */
 footer{
     padding: 21px 0;
     z-index: 2 !important;
+    max-width: 500px;
+    margin: auto;
 }
 footer a{
     margin: 0 25px;
